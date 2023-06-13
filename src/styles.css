@@ -1,0 +1,234 @@
+/*:root {
+  --primary-color: #386bc0;
+  --secondary-color: rgb(239, 241, 242);
+  --completed-color: green;
+  --Todo-text-color: black;
+  --Task-box-color: #f7f7f7;
+  --button-active-color: red;
+}*/
+@import url(//db.onlinewebfonts.com/c/4398a39f4d9a1593b725e0dc594c77fe?family=Retro + Computer);
+@font-face {
+  font-family: "Retro Computer";
+  src: url("//db.onlinewebfonts.com/t/4398a39f4d9a1593b725e0dc594c77fe.eot");
+  src: url("//db.onlinewebfonts.com/t/4398a39f4d9a1593b725e0dc594c77fe.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/4398a39f4d9a1593b725e0dc594c77fe.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/4398a39f4d9a1593b725e0dc594c77fe.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/4398a39f4d9a1593b725e0dc594c77fe.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/4398a39f4d9a1593b725e0dc594c77fe.svg#Retro Computer")
+      format("svg");
+}
+
+:root {
+  --primary-color: #071e22;
+  --secondary-color: linear-gradient(135deg, #c3cfe2 0%, #f5f7fa 100%);
+  --completed-color: green;
+  --Todo-text-color: gray;
+  --Task-box-color: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --button-active-color: green;
+}
+
+.MainView {
+  text-align: center;
+  background: var(--secondary-color);
+  width: 700px;
+  border-style: groove;
+  border-color: lightgray;
+  border-radius: 3px;
+  padding: 20px;
+  min-height: 400px;
+}
+
+.TodoItemTextDeleted {
+  text-decoration: line-through;
+}
+
+.TodoItemTextCompleted {
+  color: var(--completed-color);
+  font-weight: bold;
+}
+
+.TodoItemText {
+  color: var(--Todo-text-color);
+}
+
+.TitleView {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  border-style: ridge;
+  border-color: gray;
+  background-color: lightgray;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.TitleIconStyle {
+  color: var(--primary-color);
+  border: var(--primary-color);
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.TitleStyle {
+  font-family: "Retro Computer";
+  font-size: 25px;
+  margin-left: 10px;
+
+  padding: 5px;
+  color: var(--primary-color);
+  font-weight: bold;
+  vertical-align: center;
+}
+
+.RowStyle {
+  margin-top: 10px;
+}
+.RowStyle2 {
+  margin-top: 10px;
+  padding: 3px;
+  border-style: ridge;
+  border-color: gray;
+  background-color: lightgray;
+}
+
+.RowInputStyle {
+  border-style: groove;
+  border-color: lightgray;
+  background: var(--Task-box-color);
+  margin-top: 15px;
+  padding: 7px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.RowInputStyle1st {
+  text-align: left;
+}
+
+.RowInputStyle2st {
+  text-align: right;
+}
+
+.InputText {
+  font-family: "Retro Computer";
+  font-size: 11px;
+  padding: 6px;
+  border-radius: 3px;
+  border-style: groove;
+  width: 300px;
+  background-color: lightgray;
+  border-color: lightgray;
+}
+
+.ButtonStyle {
+  border-radius: 3px;
+  background-color: lightgray;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px 5px 10px;
+  color: var(--primary-color);
+  /*border: 3px solid var(--primary-color);*/
+  border-style: groove;
+  border-color: lightgray;
+  margin-left: 1px;
+  color: gray;
+}
+
+.BtnStyle2 {
+  font-family: "Retro Computer";
+  font-size: 11px;
+  border-radius: 3px;
+  color: gray;
+  border-color: var(--primary-color);
+  background: lightgray;
+  border-width: 2px;
+  border-color: lightgray;
+  border-style: groove;
+  font-weight: bold;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.BtnStyle2:hover {
+  font-family: "Retro Computer";
+  font-size: 11px;
+  font-size: 12px;
+  border-radius: 3px;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background: var(--secondary-color);
+  border-width: 2px;
+  font-weight: bold;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin: 3px;
+  color: gray;
+  border-color: gray;
+  border-style: groove;
+}
+
+.BtnStyle2:focus {
+  font-family: "Retro Computer";
+  font-size: 11px;
+  font-size: 12px;
+  border-radius: 3px;
+  color: var(--button-active-color);
+  border-color: var(--primary-color);
+  background: var(--secondary-color);
+  border-width: 2px;
+  font-weight: bold;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin: 3px;
+  color: gray;
+  border-color: gray;
+  border-style: groove;
+}
+
+.RowItemStyle {
+  line-height: 40px;
+  border-style: groove;
+  text-align: center;
+  background: var(--Task-box-color);
+  border-radius: 1px;
+  margin: 2px 2px -2px 2px;
+  padding-left: 12px;
+  box-shadow: 0 0.5rem 1.2rem rgb(0, 0, 0, 20%);
+  display: grid;
+  grid-template-columns: 16px auto 100px;
+  grid-gap: 10px;
+  color: gray;
+}
+.RowItemStyleText {
+  font-family: "Retro Computer";
+  font-size: 11px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: gray;
+}
+.RowItemStyleInput {
+  font-family: "Retro Computer";
+  border-style: groove;
+  border-radius: 3px;
+  font-size: 11px;
+  text-align: left;
+  width: 95%;
+  border-color: lightgray;
+  color: gray;
+}
+.btnRowStyle {
+  border-style: groove;
+  border-radius: 3px;
+  background: lightgray;
+  border-color: lightgray;
+  color: gray;
+}
