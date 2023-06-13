@@ -13,7 +13,7 @@ https://github.com/lilNuget05/To-Do-List.git
 2. Pāriet uz projekta direktoriju:
 
 ```shell
-cd TodoList
+cd To-Do-List
 ```
 
 3. Instalējiet nepieciešamās atkarības, izmantojot npm:
